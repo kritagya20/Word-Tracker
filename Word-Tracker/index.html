@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Word-Tracker</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- JS -->
+  <script type="text/javascript" src="./assets/js/script.js" defer></script>
+</head>
+<body >
+  <main>
+    <!-- HEADER -->
+    <section class = "header-wrapper">
+      <div class = "container header-content">
+        <h2 class = "title">
+          <svg class="search-icon" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><path d="M20.87,20.17l-5.59-5.59C16.35,13.35,17,11.75,17,10c0-3.87-3.13-7-7-7s-7,3.13-7,7s3.13,7,7,7c1.75,0,3.35-0.65,4.58-1.71 l5.59,5.59L20.87,20.17z M10,16c-3.31,0-6-2.69-6-6s2.69-6,6-6s6,2.69,6,6S13.31,16,10,16z"></path></svg>
+          <span>Word Tracker</span>
+        </h2>
+        <p class="header-para">An application to find the best available synonyms and antonyms of the words.</p>
+      </div>
+    </section>
+
+    <!-- SEARCHBOX -->
+    <section class = "searchbox">
+      <div class = "container searchbox-content">
+        <form id = "word-search-form">
+          <div class = "form-element">
+            <span class = "form-icon">
+              <svg viewBox="0 0 24 24"><path d="M3.95 16.7v3.4h3.4l9.8-9.9-3.4-3.4-9.8 9.9zm15.8-9.1c.4-.4.4-.9 0-1.3l-2.1-2.1c-.4-.4-.9-.4-1.3 0l-1.6 1.6 3.4 3.4 1.6-1.6z"></path></svg>
+            </span>
+            <input type = "text" class = "form-input" placeholder="Type Word" name= "search_word">
+            <button type = "submit" id = "submit-btn">
+              <svg class="search-icon" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><path d="M20.87,20.17l-5.59-5.59C16.35,13.35,17,11.75,17,10c0-3.87-3.13-7-7-7s-7,3.13-7,7s3.13,7,7,7c1.75,0,3.35-0.65,4.58-1.71 l5.59,5.59L20.87,20.17z M10,16c-3.31,0-6-2.69-6-6s2.69-6,6-6s6,2.69,6,6S13.31,16,10,16z"></path></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- SPINNER -->
+    <section id = "spinner">
+    </section>
+
+    <!-- CONTENT -->
+    <section class = "content-body">
+      <div class = "container content-body-content">
+        <div id="word-list">
+          <!-- SYNONYMS -->
+          <div class="synonyms-wrapper">
+            <h4 class="wrapper-head">Synonyms : </h4>
+            <div id = "synonyms-word-list">
+            </div>
+          </div>
+          <!-- ANTONYMS -->
+          <div id="antonyms-wrapper">
+            <h4 class="wrapper-head">Antonyms : </h4>
+            <div id = "antonyms-word-list">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <small>This app uses the &nbsp; <a href="https://www.datamuse.com/api/" target="_blank" >DATAMUSE API </a>  &nbsp; to display the most optimised and authentic data.</small>
+    </footer>
+  </main>
+</body>
+<!-- ANIMATION -->
+<!--Waves Container-->
+<div>
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+  </svg>
+</div>
+</html>
